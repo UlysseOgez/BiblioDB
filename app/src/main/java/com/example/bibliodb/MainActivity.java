@@ -69,9 +69,17 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
 
-            firstBook.setText(listBooks.get(0).Titre);
+            firstBook.setText(listBooks.get(0).Auteur);
 
         }
 
+    }
+
+    private class deleteBook extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            return null;
+        }
     }
 }
